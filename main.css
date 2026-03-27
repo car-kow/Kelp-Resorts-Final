@@ -1,0 +1,417 @@
+/* TYPOGRAPHY
+==========================================================*/
+body {
+    font-family: "Happy Monkey", Verdana, sans-serif;
+}
+
+.happy-monkey-regular {
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* HEADER
+==========================================================*/
+nav {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+    border-bottom: 5px solid darkslategray;
+}
+
+.nav-button {
+    display: flex;
+    color: white;
+    background-color: orange;
+    border: 2px solid darkorange;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+    transform: scale(1.0);
+}
+
+.nav-button:hover {
+    background-color: lightseagreen;
+    border-radius: .5rem;
+    border: 2px solid darkslategray;
+    transform: scale(1.10);
+    transition: border-radius .5s ease-in-out, transform .5s ease-in-out;
+}
+
+nav a img {
+    max-width: 200px;
+}
+
+.logo-button {
+    background-color: transparent;
+    border: none;
+}
+
+.logo-button img {
+    transform: scale(1.0);
+}
+
+.logo-button img:hover {
+    transform: scale(1.10);
+    transition: transform .5s ease-in-out;
+    background-color: transparent;
+    border: none;
+}
+
+.dropbtn {
+    display: flex;
+    color: white;
+    background-color: orange;
+    border: 2px solid darkorange;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    border-radius: 1rem;
+    transform: scale(1.0);
+}
+
+.dropbtn:hover {
+    background-color: lightseagreen;
+    border-radius: .5rem;
+    border: 2px solid darkslategray;
+    transform: scale(1.10);
+    transition: border-radius .5s ease-in-out, transform .5s ease-in-out;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    padding: 0 1rem 0 1rem;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: lightseagreen;
+    border-radius: .5rem;
+    border: 2px solid darkslategray;
+    transform: scale(1.10);
+    transition: border-radius .5s ease-in-out, transform .5s ease-in-out;
+}
+
+/* PAGE CONTENT - ALL PAGES
+==========================================================*/
+main {
+    background-image: linear-gradient(to bottom, teal, lightseagreen);
+    padding: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 300%;
+    color: white;
+    padding: 1rem;
+    margin: .5rem;
+    
+}
+
+.page-content {
+    border: solid 5px darkslategray;
+    border-radius: 1rem;
+    background-color: palegoldenrod;
+    margin: 0 3rem 3rem 3rem;
+    padding: 2rem;
+}
+
+/* PAGE CONTENT - INDEX (HOMEPAGE)
+==========================================================*/
+.homepage-content h1 {
+    text-align: center;
+    font-size: 300%;
+    color: white;
+    padding: 1rem;
+    margin: .5rem;
+}
+
+.homepage-content h2 {
+    text-align: center;
+    font-size: 150%;
+    color: white;
+    padding: 0 1rem 1rem 1rem;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.homepage-gallery {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0 0 3rem 0;
+}
+
+.homepage-gallery img {
+    width: 450px;
+    height: 450px;
+    border: 5px solid white;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.750);
+    object-fit: cover;
+}
+
+.homepage-row {
+    display: flex;
+    flex-direction: row;
+    color: darkslategray;
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.homepage-row img {
+    width: 400px;
+    height: 400px;
+    border: 5px solid white;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+    margin: 2rem 0 1rem 1.5rem;
+    object-fit: cover;
+}
+
+.homepage-row-image {
+    width: 100%;
+    height: 100%;
+}
+
+.homepage-row-text {
+    color: darkslategray;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem 1.5rem 1rem 3rem;
+}
+
+.homepage-row-text h3 {
+    font-size: 200%;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    margin: 1rem 0 0 0;
+    border-bottom: 5px solid orange;
+}
+
+.homepage-row-text p {
+    font-size: 150%;
+    padding: 1rem;
+    line-height: 1.4;
+}
+
+.homepage-book-now {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.homepage-book-now-bkg {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.homepage-book-now a {
+    color: white;
+    background-color: orange;
+    border: 2px solid darkorange;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.homepage-book-now a:hover {
+    background-color: lightseagreen;
+    border: 2px solid darkslategray;
+}
+
+/* PAGE CONTENT - ABOUT US AND THE FOUR EXPERIENCES PAGES (EXP)
+==========================================================*/
+.about-exp-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-exp-row img {
+   width: 500px;
+   height: 500px;
+   object-fit: cover;
+   margin: 2rem 1rem 1rem 1rem;
+   border: 5px solid white;
+   border-radius: 1rem;
+   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.750);
+}
+
+.about-exp-image figcaption {
+    text-align: center;
+    line-height: 1;
+    font-size: 110%;
+    color: darkslategray;
+}
+
+.about-exp-text {
+    padding: 1rem;
+    background-color: white;
+    color: darkslategray;
+    border-radius: 1rem;
+    margin: 1rem 1rem 1rem 3rem;
+}
+
+.about-exp-text h2 {
+    font-size: 200%;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    margin: 1rem 0 0 0;
+    border-bottom: 5px solid orange;
+}
+
+.about-exp-text p {
+    font-size: 150%;
+    padding: 2rem;
+    line-height: 1.4;
+}
+
+/* PAGE CONTENT - BOOKINGS, GROUPS, AND SERVICES PAGES (BGS)
+==========================================================*/
+.bgs-titles {
+    text-align: center;
+    font-size: 200%;
+    font-style: italic;
+    padding: 1rem;
+    color: darkslategray;
+    background-color: white;
+    border-bottom: 5px solid darkorange;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.bgs-rows {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1rem 5rem 1rem;
+}
+
+.bgs-columns {
+    background-color: white;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 2rem;
+    
+}
+
+.bgs-columns img {
+    border: 5px solid white;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.caption-top {
+    font-size: 150%;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: white;
+    border-bottom: 5px solid darkorange;
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.caption-bottom {
+    font-style: italic;
+    text-align: left;
+    font-size: 125%;
+    line-height: 1.4;
+    padding: 1rem;
+}
+
+/* FOOTER
+==========================================================*/
+footer {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 105%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 1rem;
+    border-top: 5px solid darkslategray;
+}
+
+footer p {
+    color: darkslategray;
+    padding: 1rem 0 0 0;
+}
+
+/* RESPONSIVE DESIGN - 1400PX WIDE DISPLAYS
+==========================================================*/
+@media (max-width: 1400px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a img {
+        padding: 1.5rem;
+    }
+
+    footer {
+        font-size: 90%;
+    }
+
+    .homepage-gallery img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* RESPONSIVE DESIGN - 975PX WIDE DISPLAYS
+==========================================================*/
+@media (max-width: 975px) {
+    .homepage-gallery img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .homepage-row-text p {
+    font-size: 125%;
+    padding: 1rem;
+    line-height: 1.4;
+    }
+
+    .homepage-row-text h3 {
+    font-size: 150%;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    margin: 1rem 0 0 0;
+    border-bottom: 5px solid orange;
+    }
+
+    .about-exp-row img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .about-exp-text h2 {
+        font-size: 150%;
+    }
+
+    .about-exp-text p {
+        font-size: 125%;
+    }
+    
+    footer {
+        font-size: 80%;
+    }
+}
